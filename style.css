@@ -1,0 +1,147 @@
+*{
+	margin:0px;
+	padding:0px;
+
+}
+body{
+	background:url('https://atgbcentral.com/data/out/156/5345367-images-of-nature-and-flowers.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	min-height:100vh;
+	/* height:minmax(100vh,auto); */
+	
+}
+
+#header{
+	width:100%;
+	height:minmax(15vh, auto);
+	background:rgba(0,0,0,0.6);
+}
+form{
+	box-sizing:border-box;
+	text-align:center;	
+	
+}
+input[type=text]{
+	height:5vh;
+	box-sizing:border-box;
+	width:200px;
+	border:none;
+	padding-left:5px;
+	outline:none;
+	margin-bottom:5px;
+	
+} 
+#submitWeather{
+	height:5vh;
+	width:100px;
+	border:none;
+	outline:none;
+	margin-left:-5px;
+	margin-bottom:5px;
+}
+
+#spann{ 
+   width:100%;
+   height:auto;
+   text-align:center;
+   font-size:1em;
+
+   
+} 
+
+#display{
+	display:none;
+	margin-left:25%;
+	
+	width:50%;
+	margin-top:20px;
+	font-family:'Bree Serif', 'serif';
+	
+}
+.li{
+	height:50px;
+}
+#display ul li{
+	padding:2px;
+	list-style:none;
+	height:35px;
+	background:rgba(0,0,0,0.6);
+	color:white;
+	font-size:1.3em;
+	box-sizing:border-box;
+	margin-top:3px;
+}
+#display img{
+	position:absolute;
+	left:75%;
+    background:rgba(0,0,0,0.6);
+	z-index:1;
+}
+iframe{
+	display:none;
+}
+
+#display ul li:hover{
+  
+  transform:rotateY(360deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
+}
+
+#map{
+	margin-left:25%;
+	width:50%;
+}
+
+
+#error{
+	margin-left:41%;
+	color:red;
+}
+p{
+	color:white;
+	font-size:1em;
+}
+
+span{
+	font-size:4em;
+	font-family:helvecta;
+}
+
+.capt{
+	color:red;
+}
+
+.ur{
+	color:blue;
+}
+
+.ia,.capb{
+	color:white;
+}
+
+ /* mobile design */
+ @media (max-width: 700px){
+ iframe,#display{
+	display:none;
+	box-sizing:border-box;
+	padding:3px;
+	width:100vw;
+	margin-left:0;
+	margin-top:10px;
+	font-family:'Bree Serif', 'serif';
+ }
+#map{
+	margin-left:0%;
+	width:100%;
+}
+#display img{
+	position:absolute;
+	left:60%;
+	background:rgba(0,0,0,0.1);
+}
+ 
+}
+ 
+
+ 

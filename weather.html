@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Wether Station</title>
+	  <meta name="Weather station" lang="en">
+	  <meta name="viewport"  initial-scale=1.0">
+	   <script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous">
+	  </script>
+
+    	<!-- <script src="jquery-3.3.1.min.js"></script>  -->
+	   <link href="style.css" rel="stylesheet" type="text/css">    
+   </head>
+   <body>
+   <!-- container -->
+        <div id="container">
+		<!-- header -->
+		<div id="header">
+		  <div id="spann">
+			   <span class="capt">T</span>
+			   <span class="ur">ur</span>
+			   <span class="capb">B</span>
+			   <span class="ia">ia</span>
+			   <p>Enter city name</p>
+		    </div>
+			
+		   <!-- form -->
+		   <form>
+				<input type="text" id="city" placeholder="City">
+				<button id="submitWeather">Search</button>
+				 <div id="error"></div>
+		   </form>
+		   </div>
+		    <!-- header ends here -->
+			<div id="display">
+			  <ul> 
+			  <!--
+			  ajax data are injected here
+			  --> </ul>	
+			</div>
+			
+		</div>
+	   </div>
+	   
+	   <footer>
+	   <!-- shows location map -->
+	     <div id="map">
+		   <iframe id="googlemap" width="100%" height="260" frameborder="o" scroling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk?output=embed"></iframe>
+		</div>
+	   </footer>
+	    <script src="script.js"></script>
+   </body>
+
+</html>
